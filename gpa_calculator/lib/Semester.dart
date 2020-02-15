@@ -1,31 +1,20 @@
-import 'package:flutter/material.dart';
-import 'Course.dart';
-class Semester
-{
-  String sName='__';
-  double gpa=0.0;
-  int endIndex=0;
+import 'LocalDB.dart';
+
+class Semester {
+  String sName = '__';
+  double gpa = 0.0;
+  int startIndex = 0;
+  int endIndex = 0;
+
   Semester();
-  /*Semester(String name,int endIndex)
-  {
-    this.sName=name;
-    this.endIndex=endIndex;
-  }*/
-  /*Container semesterLayout()
-  {
-    for (int i=1;i<coursesView.length;i++ )
-      {
-        coursesView[i]=courses[i-1].courseLayout();
-      }
-    return Container(
-      padding: EdgeInsets.fromLTRB(0, 0, 0, 50),
-      child: SingleChildScrollView(
-        child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: coursesView
-        ),
-      ),
-    );
+
+  Map<String, dynamic> toMap() {
+    return {LocalDB.columnSemesterName: sName, LocalDB.columnSemesterGPA: gpa};
+  }
+  /*Semester.fromMap(Map<String, dynamic> map) {
+    _cname.text = map[LocalDB.columnCourseName];
+    gradeValue = map[LocalDB.columnCourseGrade];
+    _cHours = map[LocalDB.columnCreditHours];
+    semId = map[LocalDB.columnCourseForeignLinkedToSem];
   }*/
 }

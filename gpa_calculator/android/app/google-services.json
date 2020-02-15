@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44286061077",
+    "firebase_url": "https://projectz-7041f.firebaseio.com",
+    "project_id": "projectz-7041f",
+    "storage_bucket": "projectz-7041f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44286061077:android:6417d56b1be6bdda51fc1c",
+        "android_client_info": {
+          "package_name": "com.example.gpa_calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44286061077-lnep2pqgmvmh3b2kuc8mkt8lnjn08ufk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnKBCQinkLcOKqYP3EWX5yPr79c1GjBII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44286061077-lnep2pqgmvmh3b2kuc8mkt8lnjn08ufk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
